@@ -1,4 +1,4 @@
-﻿using System.Net.Http;
+using System.Net.Http;
 using System.Runtime.Serialization;
 
 namespace Fortnox.SDK
@@ -62,6 +62,7 @@ namespace Fortnox.SDK
                 case Action.ExternalPrint:
                     return HttpMethod.Put;
                 case Action.Email:
+                    return HttpMethod.Put;
                 case Action.EInvoice:
                     return HttpMethod.Get;
                 default:
